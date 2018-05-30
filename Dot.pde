@@ -17,7 +17,7 @@ class Dot {
     int hue = (hues[int(random(0, hues.length-1))])%360;
     float sat = random(30, 50);
     float bri = random(90, 100);
-    c = color(hue, sat, bri);
+    c = color((hue+20)%360, sat, bri);
 
     // pick a random size
     size = random(50, 100);
